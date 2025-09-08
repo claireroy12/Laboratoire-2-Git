@@ -220,6 +220,9 @@ def gestionLogs(message):
         print("erreure dans les logs :", e)
                     
 def main():
+    
+   
+    
     machines = cvsToDataF('machines.csv') #cvs > dataframe
     
     for lignes in range(len(machines)): #loop pour le nombre de machines indiquées dans le fichier
