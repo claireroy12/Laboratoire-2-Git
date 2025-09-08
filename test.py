@@ -1,10 +1,20 @@
 import random
 
 nombre = random.randint(0,100)
-input1 = input("Devine mon chiffre : ")
+boucle = True
 
-if int(input1) == nombre :
-    print("wow trop fort!")
-else :
-    print("non, mais tu peux réessayer")
+while boucle == True:
+
+    
+    input1 = input("Devine mon chiffre : ")
+
+    try:
+        if int(input1) == nombre :
+            print("wow trop fort!")
+            boucle = False
+        else :
+            print("non, mais tu peux réessayer")
+    except:
+        print("un CHIFFRE plz")
+        
     
