@@ -1,15 +1,17 @@
 import random
 
 
+chiffre1 = input("Donnez moi un premier chiffre : ")
+chiffre2 = input("Donnez moi un deuxième chiffre : ")
 
-nombre = random.randint(0,100)
+nombre = random.randint(chiffre1,chiffre2)
 boucle = True
 essais = 0
 
 while boucle == True:
 
     
-    input1 = input("Devine mon chiffre : ")
+    input1 = input(f"Devine mon chiffre situé entre {chiffre1} et {chiffre2} : ")
     essais +=1 
 
     try:
